@@ -178,7 +178,3 @@ oracle-gaps/
 ## License
 
 The code is released under the [MIT License](LICENSE). The models and datasets it downloads (Qwen2.5-VL, Geometry3K, MathVista, and MathVerse) keep their own licenses.
-
-## Contact
-
-Please open an issue for questions about the code. For other questions, contact Hasan Kurban at hkurban@hbku.edu.qa.
