@@ -1,0 +1,23 @@
+# Python
+__pycache__/
+*.py[cod]
+.ipynb_checkpoints/
+
+# OS and editors
+.DS_Store
+.vscode/
+.idea/
+
+# Inputs and outputs that the pipeline regenerates
+data/
+results/
+figures/out/
+analysis/**/*.json
+analysis/**/*.jsonl
+analysis/**/*.csv
+analysis/**/*.npz
+analysis/**/*.txt
+analysis/**/*.log
+analysis/splits/
+analysis/cache_*/
+*.log

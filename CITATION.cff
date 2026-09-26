@@ -1,0 +1,37 @@
+cff-version: 1.2.0
+message: "If you use this code, please cite the paper."
+title: "Oracle Gaps in Reliability Coverage: Sampling Noise or Policy Specialization?"
+type: software
+authors:
+  - family-names: Cakiroglu
+    given-names: Mert Onur
+    affiliation: Indiana University Bloomington
+  - family-names: Dalkilic
+    given-names: Mehmet
+    affiliation: Indiana University Bloomington
+  - family-names: Kurban
+    given-names: Hasan
+    affiliation: Hamad Bin Khalifa University
+    email: hkurban@hbku.edu.qa
+repository-code: "https://github.com/KurbanIntelligenceLab/oracle-gaps"
+license: MIT
+date-released: 2026-09-26
+keywords:
+  - oracle gap
+  - model routing
+  - winner's curse
+  - permutation test
+  - vision-language models
+  - reinforcement learning
+  - GRPO
+preferred-citation:
+  type: article
+  title: "Oracle Gaps in Reliability Coverage: Sampling Noise or Policy Specialization?"
+  authors:
+    - family-names: Cakiroglu
+      given-names: Mert Onur
+    - family-names: Dalkilic
+      given-names: Mehmet
+    - family-names: Kurban
+      given-names: Hasan
+  year: 2026
