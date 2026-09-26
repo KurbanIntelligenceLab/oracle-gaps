@@ -1,12 +1,21 @@
-# Oracle Gaps in Reliability Coverage: Sampling Noise or Policy Specialization?
+<div align="center">
 
-Official code for the paper by **Mert Onur Cakiroglu**<sup>1</sup>, **Mehmet Dalkilic**<sup>1</sup>, and **Hasan Kurban**<sup>2</sup>.
+# Oracle Gaps in Reliability Coverage
 
-<sup>1</sup> Luddy School of Informatics, Computing, and Engineering, Indiana University Bloomington<br>
-<sup>2</sup> College of Science and Engineering, Hamad Bin Khalifa University
+### Sampling Noise or Policy Specialization?
 
-[![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
-[![Python 3.12](https://img.shields.io/badge/Python-3.12-blue.svg)](environment.yml)
+**Mert Onur Cakiroglu**<sup>1</sup> · **Mehmet Dalkilic**<sup>1</sup> · **Hasan Kurban**<sup>2</sup>
+
+<sup>1</sup>Indiana University Bloomington &emsp; <sup>2</sup>Hamad Bin Khalifa University
+
+![arXiv](https://img.shields.io/badge/arXiv-coming%20soon-B31B1B?logo=arxiv&logoColor=white)
+[![Python](https://img.shields.io/badge/Python-3.12-3776AB?logo=python&logoColor=white)](environment.yml)
+[![PyTorch](https://img.shields.io/badge/PyTorch-2.13-EE4C2C?logo=pytorch&logoColor=white)](environment.yml)
+[![Transformers](https://img.shields.io/badge/Transformers-4.57-FFD21E?logo=huggingface)](environment.yml)
+[![TRL](https://img.shields.io/badge/TRL-1.9-FFD21E?logo=huggingface)](environment.yml)
+[![License](https://img.shields.io/badge/License-MIT-97CA00?logo=opensourceinitiative&logoColor=white)](LICENSE)
+
+</div>
 
 <p align="center">
   <img src="assets/redeal_null.png" width="100%" alt="The re-deal null on one prompt: five policies' stored responses are pooled and dealt out again">
@@ -14,7 +23,7 @@ Official code for the paper by **Mert Onur Cakiroglu**<sup>1</sup>, **Mehmet Dal
 
 Policies trained from the same base model can appear to solve different problems. An oracle that picks the best policy for each prompt then looks much stronger than any single policy. Part of this *oracle gap* is a winner's curse. Picking the largest estimated success rate also picks favorable sampling errors.
 
-This repository implements two permutation tests that measure how much of an oracle gap sampling noise explains. They use only stored responses, so they can run before any router is trained.
+This is the official code for the paper. It implements two permutation tests that measure how much of an oracle gap sampling noise explains. They use only stored responses, so they can run before any router is trained.
 
 - **Re-deal null.** Pools each prompt's stored correct and incorrect responses across policies and deals them out again.
 - **Margin-preserving null.** Also keeps each policy's total number of correct responses fixed, so overall quality differences do not count as specialization.
