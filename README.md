@@ -8,7 +8,7 @@
 
 <sup>1</sup>Indiana University Bloomington &emsp; <sup>2</sup>Hamad Bin Khalifa University
 
-![arXiv](https://img.shields.io/badge/arXiv-coming%20soon-B31B1B?logo=arxiv&logoColor=white)
+[![arXiv](https://img.shields.io/badge/arXiv-2609.32996-B31B1B?logo=arxiv&logoColor=white)](https://arxiv.org/abs/2609.32996)
 [![Python](https://img.shields.io/badge/Python-3.12-3776AB?logo=python&logoColor=white)](environment.yml)
 [![PyTorch](https://img.shields.io/badge/PyTorch-2.13-EE4C2C?logo=pytorch&logoColor=white)](environment.yml)
 [![Transformers](https://img.shields.io/badge/Transformers-4.57-FFD21E?logo=huggingface)](environment.yml)
@@ -23,7 +23,7 @@
 
 Policies trained from the same base model can appear to solve different problems. An oracle that picks the best policy for each prompt then looks much stronger than any single policy. Part of this *oracle gap* is a winner's curse. Picking the largest estimated success rate also picks favorable sampling errors.
 
-This is the official code for the paper. It implements two permutation tests that measure how much of an oracle gap sampling noise explains. They use only stored responses, so they can run before any router is trained.
+This is the official code for the [paper](https://arxiv.org/abs/2609.32996). It implements two permutation tests that measure how much of an oracle gap sampling noise explains. They use only stored responses, so they can run before any router is trained.
 
 - **Re-deal null.** Pools each prompt's stored correct and incorrect responses across policies and deals them out again.
 - **Margin-preserving null.** Also keeps each policy's total number of correct responses fixed, so overall quality differences do not count as specialization.
@@ -176,11 +176,14 @@ oracle-gaps/
 ## Citation
 
 ```bibtex
-@misc{cakiroglu2026oraclegaps,
-  title  = {Oracle Gaps in Reliability Coverage: Sampling Noise or Policy Specialization?},
-  author = {Cakiroglu, Mert Onur and Dalkilic, Mehmet and Kurban, Hasan},
-  year   = {2026},
-  url    = {https://github.com/KurbanIntelligenceLab/oracle-gaps}
+@misc{cakiroglu2026oraclegapsreliabilitycoverage,
+      title={Oracle Gaps in Reliability Coverage: Sampling Noise or Policy Specialization?}, 
+      author={Mert Onur Cakiroglu and Mehmet Dalkilic and Hasan Kurban},
+      year={2026},
+      eprint={2609.32996},
+      archivePrefix={arXiv},
+      primaryClass={cs.CV},
+      url={https://arxiv.org/abs/2609.32996}, 
 }
 ```
 
